@@ -1,0 +1,64 @@
+* 
+{
+    margin: 0;
+}
+
+.top-block
+{
+    background-color: white;
+    position: relative;
+}
+
+.top-block__logo 
+{
+    font: 400 26px 'Lora';
+    color: black;
+}
+
+.navigation__link 
+{
+    text-decoration: none;
+    font: 400 11px/1.82 'Oxygen';
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.post-headline
+{
+    color: black;
+    margin: 6% 0 6%;
+}
+
+.post-headline__title
+{
+    font: 400 50px 'Lora';
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.post-headline__quote
+{
+    font: 400 17px/1.18 'Oxygen';
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 113px;
+}
+
+.post-headline__image
+{
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.post-article
+{
+    font: 400 24px/1.46 'Oxygen';
+    color: #101315;
+    margin: 140px 240px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}

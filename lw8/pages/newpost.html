@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Road.</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../static/scripts/script.js"></script>
+</head>
+
+<body>
+    <section class="top-block-admin">
+        <div class="container-admin">
+            <header class="top-block-admin__menu ">
+                <div class=" menu-admin__logotype">
+                    <a href="/home" class="menu-admin__logotype_before">Escape.</a><a href="/home" class="menu-admin__logotype_after">author</a>
+                </div>
+                <div class="logout">
+                    <img class="logout__avatar" src="../static/img/avatarlogin.png" alt="">
+                    <img class="logout__button" src="../static/img/log-out.png" alt="">
+                </div>
+            </header>
+        </div>
+    </section>
+    <div class="main-block-new">
+        <div class="container-admin">
+            <div class="main-block-new__content">
+
+                <h1 class="main-block-new__title">New Post </h1>
+                <p class="main-block-new__subtitle">Fill out the form bellow and publish your article</p>
+                <a href="#" class="main-block-new__button"> Publish</a>
+            </div>
+            <div class="main-information">
+                <p class="main-information__title">Main Information</p>
+                <div class="main-information-column">
+                    <div class="forms">
+                        <p class="login__label">Title</p>
+                        <input class="input form__admin" type="text" name="login__email" placeholder="">
+                        <p class="login__label">Short description</p>
+
+                        <input class="input form__admin" type="text" name="login__email" placeholder="">
+                        <p class="login__label">Author name</p>
+                        <input class="input form__admin" type="text" name="login__email" placeholder="">
+
+                        <p class="login__label">Author photo</p>
+                        <input class="input__author-photo" onchange="previewFile()" type="file" />
+                        <img class="load__author-photo" src="../static/img/camera.png" height="200"
+                            onclick="previewFile()" alt="Image preview" />
+
+                        <p class="login__label">Publish Date</p>
+                        <input class="input__date input" type="date" id="start" name="trip-start" value="2018-07-22"
+                            min="2018-01-01" max="2018-12-31">
+
+                        <p class="login__label">Hero Image</p>
+                        <input class="input__hero-image_big" onchange="previewFile()" type="file" />
+                        <img src="" height="200" alt="Image preview" />
+                        <p class="login__label">Hero Image</p>
+                        <p class="login__label">Size up to 10mb. Format: png, jpeg, gif.</p>
+
+                        <input class="input__hero-image_small" onchange="previewFile()" type="file" />
+                        <img src="" height="200" alt="Image preview" />
+                        <p class="login__label">Size up to 5mb. Format: png, jpeg, gif.</p>
+
+                        <label for="file-input" id="upload-label">
+                            <img id="upload-image" src="../static/img/william.JPG" alt="Upload Image">
+                        </label>
+                        <input type="file" id="file-input">
+                    </div>
+                    <div class="examples">
+                        <div class="article-prewiev">
+                            <p class="article-prewiev__description example__descpiption">Article preview </p>
+                            <div class="article__display">
+                                <p class="article__title">New Post</p>
+                                <p class="article__subtitle">Please, enter any description</p>
+                            </div>
+                        </div>
+                        <div class="post-card-prewiev">
+                            <p class="post-card-prewiev__description example__descpiption">Article preview </p>
+                            <div class="card__display">
+                                <div class="card">
+                                    <img src="" alt="AirBaloons">
+                                    <p class="card__title">New Post</p>
+                                    <p class="card__subtitle">Please, enter any description</p>
+                                    <div class="card__info">
+                                        <div class="card__author">
+                                            <img class="card__avatar" src="" alt="William">
+                                            <p class="card__author-name">Enter author name</p>
+                                        </div>
+                                        <p class="card__date">4/19/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__title">Content</div>
+                <div class="content__label">Post content (plain text)</div>
+                <textarea class="content__input" type="text" name="login__email"
+                    placeholder="Type anything you want ..."></textarea>
+            </div>
+        </div>
+        <div class="">
+        </div>
+        <footer class="foot-block">
+        </footer>
+    </div>
+</body>
+
+</html>

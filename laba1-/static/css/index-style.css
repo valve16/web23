@@ -1,0 +1,280 @@
+* 
+{
+    margin: 0;
+}
+
+
+.headline
+{
+    color: white;
+    background-image: url(../image/top_block.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12% 0 10.5% ;
+}
+
+.headline__slogan
+{
+    font: 400 50px/1.02 'Lora';
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.headline__description
+{
+    font: 400 17px/1.18 'Oxygen';
+    color: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 28.5px 0 0;
+}
+
+.headline__button
+{
+    background-color: #DD783F;
+    border-width: 0;
+    border-radius: 3px;
+    font: 400 13px/1.54 'Oxygen';
+    color: white;
+    display: block;
+    margin: 2% auto 0;
+    width: 167px;
+    height: 44px;
+    background: #DD783F;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.top-menu
+{
+    width: 100%;
+    padding: 22px 17% 23px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.top-menu__link
+{
+    text-decoration: none;
+    font: 400 14px/1.43 'Lora';
+    color: #768088;
+}
+
+.feautured-posts
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 60px 17% 0;
+    background-color: #F7F7F7;
+}
+
+.feautured-posts__title
+{
+
+    font: 400 20px/1.35 'Oxygen';
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+    width: 188px;
+    margin: 0 0 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #DEDEDE;
+    text-underline-offset: 16px;
+    width: 100%;
+}
+
+.feautured-post
+{
+    background-repeat: no-repeat;
+    max-width: 460px;
+    width: 100%;
+    height: 280px;
+    border-radius: 3px;
+    margin: 21px 0 0;
+    box-sizing: border-box;
+    padding: 20px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.feautured-posts__feautured-post_the-road-ahead
+{
+    background-image: url(../image/mountain.png);
+}
+
+.feautured-posts__feautured-post_from-top-down
+{
+    background-image: url(../image/lights.png);
+}
+
+.feautured-post__headline_link
+{
+    text-decoration: none;
+    font: 400 27px/1.11 'Lora';
+    color: white;
+    margin: 0 0 5px;
+}
+
+.feautured-post__button
+{
+    font: 400 12px 'Oxygen';
+    width: 87px;
+    height: 26px;
+    background: #DD783F;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-bottom: 112px;
+    border-radius: 3px;
+}
+
+.feautured-post__quote
+{
+    font: 400 14px/1.79 'Oxygen';
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 12px;
+}
+
+.featured-post-info
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-post-info__author-info
+{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.author-info__image
+{
+    border-radius: 60px;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+}
+
+.author-info__author
+{
+    font: 400 12px/2.92 'Oxygen';
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.feautured-post-info__date
+{
+    font: 400 12px/2.92 'Oxygen';
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.most-recent
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 67px 21% 105px;
+    background-color: #F7F7F7;
+}
+
+.most-recent__title
+{
+    font: 400 20px/1.35 'Oxygen';
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #DEDEDE;
+    text-underline-offset: 16px;
+    margin: 0 0 19px;
+}
+
+.most-recent-post
+{
+    width: 296px;
+    height: 291px;
+    background-color: #ffffff;
+    margin: 20px 0 0;
+    text-decoration: none;
+}
+
+.most-recent-post__image
+{
+    width: 296px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.most-recent-post__headline
+{
+    font: 400 16px/1.32 'Lora';
+    color: black;
+    margin: 0 0 0 13px;
+}
+
+.most-recent-post__quote
+{
+    font: 400 13px/1.46 'Oxygen';
+    color: #7A7A7A;
+    margin: 8px 13px 20px;
+    height: 38px;
+}
+
+.most-recent-post__info
+{
+    font: 400 12px/2.92 'Oxygen';
+    color: #999999;
+    background-color: #FCFCFC;
+    border-top: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 13px 5px;
+}
+
+.author-info-recent
+{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.author-info-recent__image
+{
+    border-radius: 60px;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+}
+
+.author-info-recent__author
+{
+    font: 400 12px/2.92 'Oxygen';
+    color: #999999;
+    margin: 0;
+}
+
+.info_date
+{
+    font: 400 12px/2.92 'Oxygen';
+    color: #999999;
+    margin: 0;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+  </head>
+  <body class="page">
+    <div class="page__left">
+      <div class="text__container">
+        <div class="title">
+          <span class="title_large">Escape.</span>
+          <span class="title_small">author</span>
+        </div>
+        <div class="subtitle">Log in to start creating</div>
+      </div>
+    </div>
+    <div class="page__right">
+      <div class="form-container">
+        <form action="" method="get" class="form">
+          <div class="form__title">Log In</div>
+          <label for="email" class="form__label form__label_email">
+            Email
+            <input type="email" name="email" id="email" required class="form__input" />
+          </label>
+          <label for="password" class="form__label">
+            Password
+            <input type="password" name="password" id="password" required class="form__input" />
+            <img
+              src="/static/img/eye.png"
+              alt="password-switcher"
+              onclick="{showPassword()}"
+              class="form__input_icon"
+            />
+          </label>
+          <button type="submit" class="form__submit">Log In</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/static/js/login.js"></script>
+</html>

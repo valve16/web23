@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/admin.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__logo">
+        <span class="header__logo-text">Escape.</span><span class="header__logo-author">author</span>
+      </div>
+      <div class="header__icons">
+        <img src="../static/img/avatar.png" alt="admin avatar" class="header__avatar" />
+        <img src="../static/img/exit.png" alt="exit button" class="header__exit-button" />
+      </div>
+    </header>
+    <form action="" method="post" onsubmit="publish(event)" class="form">
+      <div class="form__section form__section_justify-content_space-between">
+        <div class="form__section-title">
+          <div class="form__section-heading">New Post</div>
+          <div class="form__section-description">Fill out the form below and publish your article</div>
+        </div>
+        <button type="submit" class="form__publish-button">Publish</button>
+      </div>
+      <div class="form__section form__section_flex-direction_column">
+        <div class="form__section-info">
+          <div class="form__section-heading">Main Information</div>
+          <div class="form__section-data form__section-data_display_flex">
+            <div class="form__input-container">
+              <label for="title" class="form__label">
+                Title
+                <input type="text" name="title" id="title" class="form__input" />
+              </label>
+              <label for="description" class="form__label">
+                Short description
+                <input type="text" name="description" id="description" class="form__input" />
+              </label>
+              <label for="author-name" class="form__label">
+                Author name
+                <input type="text" name="author-name" id="author-name" class="form__input" />
+              </label>
+              <label for="author-photo" class="form__label">
+                Author Photo
+                <input
+                  type="file"
+                  name="author-photo"
+                  onchange="previewAuthorPhoto()"
+                  id="author-photo"
+                  class="form__file-input"
+                />
+                <div class="form__author-photo-input">
+                  <img src="../static/img/author-photo.png" alt="author photo" id="form__author-photo" />
+                  <img src="../static/img/upload.png" alt="upload" id="form__author-photo-upload" />
+                  <img
+                    src="../static/img/upload-new.png"
+                    alt="upload new"
+                    id="form__author-photo-upload-new"
+                    class="hidden"
+                  />
+                  <img
+                    src="../static/img/remove.png"
+                    alt="remove"
+                    onclick="removeAuthorPhoto(event)"
+                    id="form__author-photo-remove"
+                    class="hidden"
+                  />
+                </div>
+              </label>
+              <label for="date" class="form__label">
+                Publish Date
+                <input type="date" name="date" id="date" class="form__input" />
+              </label>
+              <label for="article-image" class="form__label">
+                Hero Image
+                <input
+                  type="file"
+                  accept=".png, .jpeg, .gif"
+                  name="article-image"
+                  onchange="previewArticleImage()"
+                  id="article-image"
+                  class="form__file-input"
+                />
+                <div class="form__article-image-input">
+                  <img src="../static/img/upload-article.png" alt="article image" id="form__article-image" />
+                </div>
+                <div id="form__file-description_article" class="form__file-description">
+                  Size up to 10mb. Format: png, jpeg, gif.
+                </div>
+                <div class="form__image-control">
+                  <img
+                    src="../static/img/upload-new.png"
+                    alt="upload new"
+                    id="form__article-image-upload-new"
+                    class="hidden"
+                  />
+                  <img
+                    src="../static/img/remove.png"
+                    alt="remove"
+                    onclick="removeArticleImage(event)"
+                    id="form__article-image-remove"
+                    class="hidden"
+                  />
+                </div>
+              </label>
+              <label for="card-image" class="form__label">
+                Hero Image
+                <input
+                  type="file"
+                  accept=".png, .jpeg, .gif"
+                  name="card-image"
+                  onchange="previewCardImage()"
+                  id="card-image"
+                  class="form__file-input"
+                />
+                <div class="form__card-image-input">
+                  <img src="../static/img/upload-card.png" alt="card image" id="form__card-image" />
+                </div>
+                <div id="form__file-description_card" class="form__file-description">
+                  Size up to 5mb. Format: png, jpeg, gif.
+                </div>
+                <div class="form__image-control">
+                  <img
+                    src="../static/img/upload-new.png"
+                    alt="upload new"
+                    id="form__card-image-upload-new"
+                    class="hidden"
+                  />
+                  <img
+                    src="../static/img/remove.png"
+                    alt="remove"
+                    onclick="removeCardImage(event)"
+                    id="form__card-image-remove"
+                    class="hidden"
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="form__preview-container">
+              <div class="form__preview-article">
+                <div class="form__preview-heading">Article preview</div>
+                <div class="form__preview-block">
+                  <div class="window-frame">
+                    <div class="dots">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                    <div class="article">
+                      <div class="article__info">
+                        <div id="article__title" class="article__title"></div>
+                        <div id="article__description" class="article__description"></div>
+                      </div>
+                      <img
+                        src="../static/img/article-preview-image.png"
+                        alt="article preview"
+                        id="article__image"
+                        class="article__image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form__preview-shadow-right"></div>
+                <div class="form__preview-shadow-bottom"></div>
+              </div>
+              <div class="form__preview-card">
+                <div class="form__preview-heading">Post card preview</div>
+                <div class="form__preview-block">
+                  <div class="card">
+                    <img
+                      src="../static/img/card-preview-image.png"
+                      alt="card preview"
+                      id="card__image"
+                      class="card__image"
+                    />
+                    <div class="card__info">
+                      <h3 id="card__title" class="card__title"></h3>
+                      <div id="card__subtitle" class="card__subtitle"></div>
+                    </div>
+                    <div class="card__creation-info">
+                      <div class="card__author">
+                        <img
+                          src="../static/img/card-preview-author.png"
+                          alt="author photo"
+                          id="card__author-avatar"
+                          class="card__author-avatar"
+                        />
+                        <span id="card__author-name" class="card__author-name"></span>
+                      </div>
+                      <span id="card__date" class="card__date"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__preview-shadow-right"></div>
+                <div class="form__preview-shadow-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__section-content">
+          <div class="form__section-heading">Content</div>
+          <div class="form__section-data">
+            <label for="content" class="form__label">
+              Post content (plain text)
+              <textarea
+                name="content"
+                id="content"
+                placeholder="Type anything you want ..."
+                class="form__textarea"
+              ></textarea>
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="../static/js/admin.js"></script>
+  </body>
+</html>

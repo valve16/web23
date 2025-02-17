@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link href="/static/css/main-style.css" rel="stylesheet">
+    <link href="/static/css/the-road-ahead-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="top-block">
+      <span class="top-block__logo">Escape.</span>
+      <nav class="top-block__navigation navigation">
+        <a href="/home" class="navigation__link">HOME</a>
+        <a href="/home" class="navigation__link">CATEGORIES</a>
+        <a href="/home" class="navigation__link">ABOUT</a>
+        <a href="/home" class="navigation__link">CONTACT</a>
+      </nav>
+    </header>
+    <div class="post-headline">
+      <h1 class="post-headline__title">{{ .Title }}</h1>
+      <h2 class="post-headline__quote">{{ .SubTitle }}</h2>
+      <img class="post-headline__image" src="{{ .ImgPost }}" alt="{{ .Title }}">
+    </div>
+    <article class="post-article">
+      <p class="post-article__paragraph">
+        {{ .Content }}  
+      </p>
+    </article>  
+    <footer class="basement">
+      <form class="basement-form">
+        <h1 class="basement-form__heading">Stay in Touch</h1>
+        <input class="basement-form__input-field" type="text" placeholder="Enter your email address">
+        <input class="basement-form__button" type="submit" value="Submit">
+      </form>
+      <div class="basement-menu">
+        <span class="basement-menu__logo">Escape.</span>
+        <nav class="basement-menu__navigation basement-navigation">
+          <a href="#" class="basement-navigation__link">HOME</a>
+          <a href="#" class="basement-navigation__link">CATEGORIES</a>
+          <a href="#" class="basement-navigation__link">ABOUT</a>
+          <a href="#" class="basement-navigation__link">CONTACT</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

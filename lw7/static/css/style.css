@@ -1,0 +1,533 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto
+}
+
+.menu__logotype {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu__items {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.menu__item {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.6px;
+}
+
+.main-block {
+    background: #F7F7F7;
+    padding-bottom: 81px;
+}
+
+.top-block {
+    background: url("../img/sands.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.top-block__content {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: 940px;
+    margin-top: 108px;
+    padding-bottom: 169px;
+}
+
+.top-block__menu {
+    display: flex;
+    padding: 21px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.top-block__text {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    padding: 3px 0 25px 0;
+
+}
+
+.top-block__button {
+    background: #DD783F;
+    border-radius: 3px;
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    padding: 12px 31px 12px 31px;
+    text-decoration: none;
+}
+
+.top-block__header {
+    margin: 0;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.submenu {
+    margin: 8px auto;
+
+}
+
+.submenu__items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 22px 6px;
+    padding: 0;
+}
+
+.submenu__item {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768088;
+    text-decoration: none;
+    padding: 0 31px 0 41px;
+}
+
+
+
+.section__title {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(46, 46, 46);
+    margin: 0;
+}
+
+.featured-post__text-title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.featured-post__description {
+    position: absolute;
+    bottom: 17px;
+    left: 0;
+    right: 0;
+    margin-left: 20px;
+}
+
+
+
+.featured-post__text {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 6px 0;
+}
+
+.featured-post__text-date {
+    padding-right: 21px;
+}
+
+.author-name {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    padding-left: 10px;
+}
+
+.author-name_light {
+    color: rgba(153, 153, 153, 1);
+
+}
+
+.featured-post__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-posts {
+    padding-top: 64px;
+}
+
+.featured-post {
+
+    border-radius: 3px;
+    position: relative;
+}
+
+.featured-post__info-author {
+    display: flex;
+    align-items: center;
+}
+
+.featured-post__info {
+
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.recents-posts {
+    margin-top: 63px;
+}
+
+.recents-posts__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recents-posts__item-title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgb(16, 19, 21);
+    margin: 10px 0 0 13px;
+}
+
+.recents-posts__item-text {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(122, 122, 122);
+    margin: 9px 0 61px 0;
+    padding-left: 14px;
+}
+
+.recents-posts__item-name {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(122, 122, 122);
+}
+
+.recents-post__avatar {
+    margin-left: 13px;
+}
+
+.recents-posts__item-content {
+    background: rgb(255, 255, 255);
+    padding: 14px 13px;
+}
+
+.recents-posts__item-info {
+    background: rgba(252, 252, 252, 1);
+    border-top: solid;
+    border-color: rgba(239, 239, 239, 1);
+    border-width: 1px;
+    width: 296px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 7px;
+    padding-top: 5px;
+}
+
+.recents-post__info-author {
+    display: flex;
+    align-items: center;
+}
+
+.recents-posts__item-img {
+    width: 296px;
+}
+
+.recents-posts__item {
+    width: 296px;
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+
+.recents-author__photo {
+    border-radius: 60px;
+}
+
+.recents-posts__item-date {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgb(153, 153, 153);
+    margin: 0;
+    padding-right: 15px;
+}
+
+.foot-block {
+    background: url('../img/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.foot-block__writing
+{
+    margin-bottom: 91px;
+}
+
+.foot-block__line {
+    background: rgba(255, 255, 255, 0.12);
+    height: 1px;
+}
+
+.foot-block__menu {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-block-background
+{
+    background: rgba(35, 47, 56, 0.6);
+    border-radius: 0;
+}
+
+.foot-block__menu-items {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.foot-block__menu-item {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+
+.foot-block__logotype {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+.road-menu__item {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(46, 46, 46);
+}
+
+.road-menu__logotype {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(46, 46, 46);
+}
+
+.road-ahead__title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(46, 46, 46);
+}
+
+.road-ahead__subtitle {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(46, 46, 46, 0.63);
+}
+
+.road-ahead__text-item {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: rgb(16, 19, 21);
+}
+
+
+.avatar {
+    border-radius: 60px;
+}
+
+.featured-post__comment {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+}
+
+.featured-post__comment-text {
+    font-family: 'Oxygen', arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: rgb(221, 120, 63);
+    border-radius: 2px;
+    padding: 6px 9px 7px;
+    width: min-content;
+    text-transform: uppercase;
+}
+
+.writing-subblock__title {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #EFEFEF;
+    margin: 0;
+    padding: 82px 0 0 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.input__text {
+    font-family: 'Roboto', sans-serif;
+    ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #817F83;
+    background: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    border: none;
+    padding: 18px 208px 18px 35px;
+}
+
+.input__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F8F8F8;
+    background: rgba(255, 255, 255, 0.28);
+    border: none;
+    border-radius: 0 3px 3px 0;
+    padding: 18px 43px 18px 44px;
+    cursor: pointer;
+}
+
+.line {
+    border-top: 1px solid rgb(222, 222, 222);
+    width: 188px;
+    height: 1px;
+    margin: 15px auto 22px;
+}
+
+.name {
+    padding-left: 12px;
+    white-space: nowrap;
+    left: 8.57%;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.5px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}

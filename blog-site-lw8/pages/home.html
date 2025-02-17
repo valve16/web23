@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/home.css" />
+  </head>
+  <body class="page">
+    <header class="header page__header header_background_grand-canyon">
+      <div class="header__links">
+        <div class="logo header__logo">
+          <a href="/home" class="logo__text">Escape.</a>
+        </div>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/home" class="menu__link menu__link_uppercase">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link_uppercase">Categories</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link_uppercase">About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link_uppercase">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <div class="title header__title">
+          <h1 class="title__main-title">Let's do it together.</h1>
+          <div class="title__subtitle">We travel the world in search of stories. Come along for the ride.</div>
+        </div>
+        <button type="button" class="button header__button">View Latest Posts</button>
+      </div>
+    </header>
+    <main class="content page__content">
+      <nav class="menu content__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Nature</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Photography</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Relaxation</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Vacation</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Travel</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link_secondary">Adventure</a></li>
+        </ul>
+      </nav>
+      <section class="featured-posts content__featured-posts">
+        <h2 class="featured-posts__title">Featured Posts</h2>
+        <div class="featured-posts__content">
+          {{ range.FeaturedPosts }}
+          <a href="post/{{ .PostId }}/{{ .URLTitle }}" class="featured-posts__post">
+            <div class="post post_large {{ .ImgModifier }}">
+              {{ if .Category }}
+              <span class="post__category">{{ .Category }}</span>
+              {{ end }}
+              <div class="post__info">
+                <h3 class="post__title">{{ .Title }}</h3>
+                <div class="post__subtitle">{{ .Subtitle }}</div>
+              </div>
+              <div class="post__creation-info">
+                <div class="post__author">
+                  <img src="{{ .AuthorImg }}" alt="{{ .Author }}" class="post__author-avatar" />
+                  <span class="post__author-name">{{ .Author }}</span>
+                </div>
+                <span class="post__date">{{ .PublishDate }}</span>
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+      </section>
+      <section class="most-recent content__most-recent">
+        <h2 class="most-recent__title">Most Recent</h2>
+        <div class="most-recent__content">
+          {{ range.MostRecentPosts }}
+          <a href="post/{{ .PostId }}/{{ .URLTitle }}" class="most-recent__post">
+            <div class="post post_small">
+              <img src="{{ .Img }}" alt="{{ .ImgAlt }}" class="post__image" />
+              <div class="post__info">
+                <h3 class="post__title">{{ .Title }}</h3>
+                <div class="post__subtitle">{{ .Subtitle }}</div>
+              </div>
+              <div class="post__creation-info">
+                <div class="post__author">
+                  <img src="{{ .AuthorImg }}" alt="{{ .Author }}" class="post__author-avatar" />
+                  <span class="post__author-name">{{ .Author }}</span>
+                </div>
+                <span class="post__date">{{ .PublishDate }}</span>
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+      </section>
+    </main>
+    <footer class="footer page__footer">
+      <form action="" method="post" class="email-form footer__email-form">
+        <h2 class="email-form__title">Stay in Touch</h2>
+        <div class="email-form__content">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            class="email-form__input"
+          />
+          <button type="submit" class="email-form__button">Submit</button>
+        </div>
+      </form>
+      <div class="footer__links">
+        <div class="logo footer__logo">
+          <a href="/home" class="logo__text">Escape.</a>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/home" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer"
+                >Categories</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

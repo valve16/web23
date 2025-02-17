@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="top-block">
+        <div class="container">
+            <header class="top-block__menu">
+                <a href="/" class="menu__logotype">Escape.</a>
+                <ul class="menu__items">
+                    <li><a href="/" class="menu__item">home</a>
+                    <li><a href="#" class="menu__item">caregories</a>
+                    <li><a href="#" class="menu__item">about</a>
+                    <li><a href="#" class="menu__item">contact</a>
+                </ul>
+            </header>
+            <div class="top-block__content">
+                <h1 class="top-block__header">Let's do it together. </h1>
+                <p class="top-block__text">We travel the world in search of stories. Come along for the ride.</p>
+                <a href="#" class="top-block__button"> View Latest Posts</a>
+            </div>
+        </div>
+    </section>
+    <div class="submenu container">
+        <ul class="submenu__items">
+            <li><a href="#" class="submenu__item">Nature</a>
+            <li><a href="#" class="submenu__item">Photography</a>
+            <li><a href="#" class="submenu__item">Relaxation</a>
+            <li><a href="#" class="submenu__item">Vacation</a>
+            <li><a href="#" class="submenu__item">Travel</a>
+            <li><a href="#" class="submenu__item">Adventure</a>
+        </ul>
+    </div>
+    <div class="main-block">
+        <section class="featured-posts container">
+            <h2 class="featured-post__title section__title">Featured Posts</h2>
+            <div class="line"></div>
+            <div class="featured-post__items">
+                {{ range .FeaturedPosts }}
+                <div class="featured-post__item-road featured-post">
+                    <img src="{{ .PostImg}}" alt="" class="featured-post__image">
+                    <div class="featured-post__comment">
+                        <div class="featured-post__comment-text">adventure</div>
+                    </div>
+                    <div class="featured-post__description">
+                        <div class="featured-post__text-title">{{ .Title }}</div>
+                        <div class="featured-post__text">{{ .Subtitle }}</div>
+                        <div class="featured-post__info">
+                            <div class="featured-post__info-author">
+                                <img class="featured-post__avatar avatar" src="{{ .AuthorImg}}" alt="Mat">
+                                <p class="author-name name">{{ .Author}}</p>
+                            </div>
+                            <div class="featured-post__text-date">{{ .Date }}</div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                <!-- <div class="featured-post__item-adventure featured-post">
+                    <img src=" .PostImg" alt="" class="featured-post__image">
+                    <div class="featured-post__description">
+                        <div class="featured-post__text-title">From Top Down</div>
+                        <div class="featured-post__text">Once a year, go someplace you've never been before</div>
+                        <div class="featured-post__info">
+                            <div class="featured-post__info-author">
+                                <img class="featured-post__avatar avatar" src="image/william.jpg" alt="William">
+                                <p class="author-name name">William Wong</p>
+                            </div>
+                            <div class="featured-post__text-date">September 25, 2015</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="recents-posts container">
+            <h2 class="recents-posts__title section__title">Most Recent</h2>
+            <div class="line"></div>
+            <div class="recents-posts__items">
+                {{ range .RecentsPosts }}
+                <div class="recents-posts__item">
+                    <img src="{{ .PostImg }}" alt="AirBaloons">
+                    <p class="recents-posts__item-title">{{ .Title }}</p>
+                    <p class="recents-posts__item-text">{{ .Subtitle }}</p>
+                    <div class="recents-posts__item-info">
+                        <div class="recents-post__info-author">
+                            <img class="recents-post__avatar avatar" src="{{ .AuthorImg }}" alt="William">
+                            <p class="author-name author-name_light">{{ .Author }}</p>
+                        </div>
+                        <p class="recents-posts__item-date">{{ .Date }}</p>
+                    </div>
+                </div>
+                
+                {{ end }}
+            </div>
+        </section>
+    </div>
+    <footer class="foot-block">
+        <section class="foot-block__writing container">
+            <div class="foot-block__writing-subblock">
+                <h2 class="writing-subblock__title">Stay in Touch</h2>
+                <div class="line"></div>
+                <form class="form">
+                    <input class="input__text" type="text" name="email" placeholder="Enter your email address">
+                    <input class="input__button" type="submit" name="button" value="Submit">
+                </form>
+            </div>
+        </section>
+        <div class="foot-block__line"></div>
+        <div class="foot-block-background">
+            <nav class="foot-block__menu container">
+                <h4><a href="/" class="foot-block__logotype">Escape.</a></h4>
+                <ul class="foot-block__menu-items">
+                    <li><a href="/" class="foot-block__menu-item">home</a>
+                    <li><a href="#" class="foot-block__menu-item">categries</a>
+                    <li><a href="#" class="foot-block__menu-item">about</a>
+                    <li><a href="#" class="foot-block__menu-item">contact</a>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

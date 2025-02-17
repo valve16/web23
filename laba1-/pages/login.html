@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Escape.login</title>
+  <link href="/static/css/login.css" rel="stylesheet" type="text/css">
+  <link href="/static/css/login-js.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body class="body__section_backgroud">
+  <div class="body__display display">
+    <div>
+      <h1 class="display__title">Escape.<span class="display__author"> author </span></h1>
+      <p class="display__subtitle">
+        Log in to start creating
+      </p>
+    </div>
+    <form class="display__login login">
+      <p class="login__title">
+        Log In
+      </p>
+      <div id="message"></div>
+      <div class="login__email_margin" id="email-login">
+        <p class="login__name">Email</p>
+        <label class="login__field">
+          <input class="login__field_input" id="email" name="email" placeholder=" "> 
+        </label>
+      </div>
+      <div class="login__password_margin" id="password-login">
+        <p class="login__name">Password</p> 
+          <label class="login__field">
+            <input class="login__field_input" id="password" name="password" type="password" placeholder=" ">
+            <img class="login__field_icon" id="icon" src="/static/image/eye.svg">
+          </label>
+      </div>
+      <input class="button-style button__size" id="btn-login" type="submit" value="Log In">
+    </form>
+  </div>
+  <script src="static/js/login.js"></script>
+</body>
+</html>

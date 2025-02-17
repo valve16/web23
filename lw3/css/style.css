@@ -1,0 +1,278 @@
+.menu__logotype
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px; 
+    color: rgb(255, 255, 255);  
+    text-decoration: none; 
+}
+.menu__item
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-block
+{
+    background: #F7F7F7;
+}
+.top-block__content
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    color: rgb(255, 255, 255);
+}
+.top-block__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+.top-block__button
+{
+    background: #DD783F;
+    border-radius: 3px;
+    width: 167px;
+    height: 44px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    padding: 12px 31px 12px 31px;
+    text-decoration: none;
+}
+
+.submenu__item
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(118, 128, 136);
+    text-decoration: none;
+}
+.featured-posts__title{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+
+color: rgb(46, 46, 46);
+}
+.recents-posts__title{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(46, 46, 46);
+}
+.top-block
+{
+    background: url("../image/sands.jpg");
+    background-repeat: no-repeat;
+}
+.featured-posts__item-road
+{
+    background: url("../image/northlight.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.featured-posts__item-adventure
+{
+    background: url("../image/chinalight.png");
+    background-repeat: no-repeat;
+}
+.featured-posts__text-title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+.featured-posts__text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+.featured-posts__text_foot
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+}
+.recents-posts__item-title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgb(16, 19, 21);
+}
+.recents-posts__item-text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(122, 122, 122); 
+}
+.recents-posts__item-name
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(122, 122, 122); 
+}
+.recents-posts__item-date
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgb(153, 153, 153);
+}
+.foot-block__item
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.foot-block__menu
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    background: url('../image/rectangle.png');
+    background-repeat: no-repeat;
+}
+.foot-block__logotype
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.road-menu__item
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(46, 46, 46);
+}
+.road-menu__logotype
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(46, 46, 46);
+}
+.road-ahead__title
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(46, 46, 46);
+}
+
+.road-ahead__subtitle
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(46, 46, 46, 0.63);
+}
+.road-ahead__text-item
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: rgb(16, 19, 21);
+}
+
+
+.avatar
+{
+    border-radius: 60px;
+}
+/* .featured-posts__comment
+{
+    background: #DD783F;
+    border-radius: 2px;
+    width: 87px;
+    height: 26px;
+    border-radius: 2px;
+} */
+
+.featured-posts__comment-text
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: rgb(221, 120, 63);
+    border-radius: 2px;
+    padding: 6px 9px 7px 9px;
+    width:min-content;
+}

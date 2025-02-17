@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Road.</title>
+        <link href="/static/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="top-block__road">
+            <div class="top-block__road-menu">
+                <h2><a href="/home" class="road-menu__logotype">Escape.</a></h2>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/" class="road-menu__item">HOME</a> 
+                        <li><a href="#" class="road-menu__item">CATEGORIES</a> 
+                        <li><a href="#" class="road-menu__item">ABOUT</a> 
+                        <li><a href="#" class="road-menu__item">CONTACT</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="top-block__content container">
+                <h1 class="road-ahead__title">{{ .Title }}</h1>
+                <p class="road-ahead__subtitle">{{ .Subtitle }}</p>
+            </div>
+            <img src="..\{{ .PostImg }}" alt="NorthLight" class="road-ahead__title-image"> 
+        </section>
+        <section class="road-ahead__text container">
+            <p class="road-ahead__text-item">{{ .Contents }}</p>
+        </section>
+        <!-- <footer >
+            <nav class="foot-block__menu">
+                <h4><a href="/" class="foot-block__logotype">Escape.</a></h4>
+                <ul>
+                    <li><a href="/" class="foot-block__item">HOME</a> 
+                    <li><a href="#" class="foot-block__item">CATEGORIES</a> 
+                    <li><a href="#" class="foot-block__item">ABOUT</a> 
+                    <li><a href="#" class="foot-block__item">CONTACT</a>
+                </ul>
+            </nav>    
+        </footer> -->
+        <footer class="foot-block">
+            <section class="foot-block__writing container">
+                <div class="foot-block__writing-subblock">
+                    <h2 class="writing-subblock__title">Stay in Touch</h2>
+                    <div class="line"></div>
+                    <form class="form">
+                        <input class="input__text" type="text" name="email" placeholder="Enter your email address">
+                        <input class="input__button" type="submit" name="button" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <div class="foot-block__line"></div>
+            <div class="foot-block-background">
+                <nav class="foot-block__menu container">
+                    <h4><a href="/" class="foot-block__logotype">Escape.</a></h4>
+                    <ul class="foot-block__menu-items">
+                        <li><a href="/" class="foot-block__menu-item">home</a>
+                        <li><a href="#" class="foot-block__menu-item">categries</a>
+                        <li><a href="#" class="foot-block__menu-item">about</a>
+                        <li><a href="#" class="foot-block__menu-item">contact</a>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

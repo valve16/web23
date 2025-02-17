@@ -1,0 +1,124 @@
+/* Regex for colors #[0-9a-fA-F]+ */
+@font-face {
+  font-family: "Lora", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+}
+
+@font-face {
+  font-family: "Oxygen", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.page {
+  height: 100vh;
+  margin: 0;
+  background: url(/static/img/login-background.png) no-repeat center / cover;
+  display: flex;
+}
+
+.page__left {
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_large {
+  font: 400 normal 46px/1 "Lora", serif;
+}
+
+.title_small {
+  font: 400 normal 25px/1.24 "Oxygen", sans-serif;
+}
+
+.subtitle {
+  margin-top: 16px;
+  font: 400 normal 17px/1.47 "Oxygen", sans-serif;
+}
+
+.page__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 480px;
+  height: 560px;
+  background: #ffffff;
+}
+
+.form {
+  margin: 56px 40px auto 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  font: 400 normal 34px/1.18 "Lora", serif;
+}
+
+.form__label {
+  font: 400 normal 12px/1.33 "Oxygen", sans-serif;
+  color: #7a7a7a;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 5px;
+  position: relative;
+}
+
+.form__label_email {
+  margin-top: 50px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  height: 40px;
+  width: 400px;
+}
+
+.form__input_filled {
+  border-bottom: 1px solid #2e2e2e;
+  background: #f7f7f7;
+}
+
+.form__input_icon {
+  position: absolute;
+  width: 22px;
+  right: 5px;
+  bottom: 12px;
+}
+
+.form__input:focus-visible {
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.form__submit {
+  margin-top: 40px;
+  background: #dd783f;
+  border-radius: 3px;
+  border: none;
+  height: 48px;
+  width: 93px;
+  font: 400 normal 16px/1.5 "Oxygen", sans-serif;
+  color: #ffffff;
+}
+
+::-ms-reveal { 
+  display: none; 
+}

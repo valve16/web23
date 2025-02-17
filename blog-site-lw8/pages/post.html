@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/post.css" />
+  </head>
+  <body class="page">
+    <header class="header page__header header_background_smoky-white">
+      <div class="header__links">
+        <div class="logo header__logo">
+          <a href="/home" class="logo__text logo__text_dark">Escape.</a>
+        </div>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/home" class="menu__link menu__link_uppercase menu__link_dark">Home</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_dark">Categories</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link_uppercase menu__link_dark">About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link_uppercase menu__link_dark">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <div class="title header__title">
+          <h1 class="title__main-title title__main-title_dark">{{ .Title }}</h1>
+          <div class="title__subtitle title__subtitle_dark">{{ .Subtitle }}</div>
+        </div>
+      </div>
+    </header>
+    <main class="content page__content">
+      <article class="article content__article">
+        <img src="/{{ .Img }}" alt="{{ .ImgAlt }}" class="article__image" />
+        <div class="content__paragraphs">
+          {{ range .Paragraphs}}
+          <p class="content__paragraph">{{.}}</p>
+          {{end}}
+        </div>
+      </article>
+    </main>
+    <footer class="footer page__footer">
+      <form action="" method="post" class="email-form footer__email-form">
+        <h2 class="email-form__title">Stay in Touch</h2>
+        <div class="email-form__content">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            class="email-form__input"
+          />
+          <button type="submit" class="email-form__button">Submit</button>
+        </div>
+      </form>
+      <div class="footer__links">
+        <div class="logo footer__logo">
+          <a href="/home" class="logo__text">Escape.</a>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/home" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer"
+                >Categories</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_uppercase menu__link_transparent menu__link_footer">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

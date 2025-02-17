@@ -1,0 +1,36 @@
+.header {
+  min-height: 360px;
+}
+
+.header_background_smoky-white {
+  background: #f5f5f5;
+}
+
+.logo__text_dark {
+  color: #2e2e2e;
+}
+
+.menu__link_dark {
+  color: #2e2e2e;
+}
+
+.title__main-title_dark {
+  color: #2e2e2e;
+}
+
+.title__subtitle_dark {
+  color: #2e2e2ea1;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.content__paragraphs {
+  margin: 5% 10%;
+}
+
+.content__paragraph {
+  font: normal 400 24px/1.46 "Oxygen", sans-serif;
+  color: #101315;
+}

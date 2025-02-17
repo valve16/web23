@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Escape</title>
+    <link href="/static/css/main-style.css" rel="stylesheet">
+    <link href="/static/css/index-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">   
+  </head>
+  <body class="page">
+    <header class="top-block">
+      <span class="top-block__logo">Escape.</span>
+      <nav class="top-block__navigation navigation">
+        <a href="/home" class="navigation__link">HOME</a>
+        <a href="/home" class="navigation__link">CATEGORIES</a>
+        <a href="/home" class="navigation__link">ABOUT</a>
+        <a href="/home" class="navigation__link">CONTACT</a>
+      </nav>
+    </header>
+    <div class="headline">
+      <h1 class="headline__slogan">{{ .Title }}</h1>
+      <h2 class="headline__description">{{ .SubTitle }}</h2>
+      <button class="headline__button" href="#">View Latest Posts</button>
+    </div>
+    <div class="top-menu">
+      <a href="/home" class="top-menu__link">Nature</a>
+      <a href="/home" class="top-menu__link">Photography</a>
+      <a href="/home" class="top-menu__link">Relaxion</a>
+      <a href="/home" class="top-menu__link">Vacation</a>
+      <a href="/home" class="top-menu__link">Travel</a>
+      <a href="/home" class="top-menu__link">Adventure</a>
+    </div>
+    <div class="feautured-posts">
+      <h2 class="feautured-posts__title">Feautured Posts</h2>
+      {{ range .FeaturedPosts }}
+      <a class="{{ .ImgModifier }}" href="/post/{{ .PostID }}">
+        <h3 class="feautured-post__headline_link">{{ .Title }}</h3>
+        <h4 class="feautured-post__quote">{{ .Description }}</h4>
+        <div class="feautured-post__featured-post-info featured-post-info">
+          <div class="featured-post-info__author-info author-info">
+            <img class="author-info__image" src="{{ .AuthorImg }}">
+            <span class="author-info__author">{{ .Author }}</span>
+          </div>
+          <span class="feautured-post-info__date">{{ .PublishDate }}</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    <div class="most-recent">
+      <h2 class="most-recent__title">Most Recent</h2>
+      {{ range .MostRecentPosts }}
+        <a class="most-recent__most-recent-post most-recent-post" href="/post/{{ .PostID }}">
+          <img class="most-recent-post__image" src="{{ .PostImg }}">
+          <h3 class="most-recent-post__headline">{{ .Title }}</h4>
+          <h4 class="most-recent-post__quote">{{ .Description }}</h5>
+          <div class="most-recent-post__info info">
+            <div class="info__author-info-recent author-info-recent">
+              <img class="author-info-recent__image" src="{{ .AuthorImg }}">
+              <span class="author-info-recent__author">{{ .Author }}</span>
+            </div>
+            <span class="info_date">{{ .PublishDate }}</span>
+          </div>
+        </a>
+        {{ end }}
+    </div>
+    <footer class="basement">
+      <form class="basement-form">
+        <h1 class="basement-form__heading">Stay in Touch</h1>
+        <input class="basement-form__input-field" type="text" placeholder="Enter your email address">
+        <input class="basement-form__button" type="submit" value="Submit">
+      </form>
+      <div class="basement-menu">
+        <span class="basement-menu__logo">Escape.</span>
+        <nav class="basement-menu__navigation basement-navigation">
+          <a href="/home" class="basement-navigation__link">HOME</a>
+          <a href="/home" class="basement-navigation__link">CATEGORIES</a>
+          <a href="/home" class="basement-navigation__link">ABOUT</a>
+          <a href="/home" class="basement-navigation__link">CONTACT</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
